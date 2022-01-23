@@ -1,0 +1,68 @@
+:root {
+  --bg-color: #2c3e50;
+  --text-color: white;
+  --primary-color: #0dbd8b;
+  --link-color: var(--primary-color);
+  --device-color: #00000080;
+
+  --spacer: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --spacer: 2rem;
+  }
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(100%, 1rem + 2vw, 24px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: var(--link-color);
+}
+
+small {
+  font-size: 0.7em;
+}
+
+p {
+  margin: 0 0 1rem;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+pre {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+code {
+  background-color: #00000055;
+  padding: 0.1em 0.2em;
+}
