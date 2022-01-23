@@ -1,6 +1,6 @@
-# Curium
+# Curium [![Build](https://github.com/technischerpunkt/curium/actions/workflows/main.yml/badge.svg)](https://github.com/technischerpunkt/curium/actions/workflows/main.yml)
 
-Quick start guide for [Matrix](https://matrix.org/) with the Element client, written in Vue 3.
+Quick start guide for [Matrix](https://matrix.org/) with the Element client, written in Typescript with Vue 3.
 
 ## Development
 
@@ -15,6 +15,10 @@ yarn build
 # preview the production build
 yarn preview
 ```
+
+## Deployment
+
+All tags are automatically deployed via GitHub Actions.
 
 ## Credits
 
