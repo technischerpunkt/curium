@@ -20,6 +20,10 @@ jobs:
           yarn install
           yarn build
 
+      - name: add github pages cname file
+        if: startsWith(github.ref, 'refs/tags/')
+        run: echo 'curium.technischer.org' > dist/CNAME
+
       - name: Deploy 🚀
         if: startsWith(github.ref, 'refs/tags/')
         uses: JamesIves/github-pages-deploy-action@v4.2.2
