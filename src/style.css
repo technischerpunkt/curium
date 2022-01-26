@@ -37,6 +37,11 @@ a {
   color: var(--link-color);
 }
 
+a:hover,
+a:focus {
+  opacity: 0.8;
+}
+
 small {
   font-size: 0.7em;
 }
@@ -65,4 +70,8 @@ pre {
 code {
   background-color: #00000055;
   padding: 0.1em 0.2em;
+}
+
+.icon {
+  height: 1.2em;
 }
