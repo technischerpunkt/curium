@@ -2,7 +2,9 @@
   <div class="laptop-wrapper">
     <div class="body">
       <div class="screen">
-        <slot />
+        <div class="screen-content">
+          <slot />
+        </div>
       </div>
     </div>
     <div class="base"></div>
@@ -24,7 +26,7 @@
   border-radius: 15px;
   border: 3px solid #000;
   background: var(--device-color);
-  padding-top: 58.8%;
+  padding: 4%;
 
   &:after {
     position: absolute;
@@ -39,17 +41,25 @@
 }
 
 .screen {
-  position: absolute;
-  top: 7%;
-  left: 4%;
-  height: 85%;
-  width: 92%;
+  position: relative;
+  width: 100%;
+  padding-top: 58.6%;
   background: #ffffff20;
   border: 10px solid #ffffff25;;
   border-radius: 5px;
+}
+
+.screen-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 }
 
 .base {

@@ -72,6 +72,37 @@ code {
   padding: 0.1em 0.2em;
 }
 
+input[type="checkbox"] {
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #ffffff33;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em currentColor;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
 .icon {
   height: 1.2em;
 }
