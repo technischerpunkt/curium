@@ -545,10 +545,10 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-vite-svg-loader@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/vite-svg-loader/-/vite-svg-loader-3.1.2.tgz#e701d6f5d42969eac2b3c40fea9d4159bfa27be3"
-  integrity sha512-op5ENc3eo1K1YlufQtdyAcxxXtiWJHyimH9y573ZWhj/9cw5x3ZtYhOEQua7MugclTa9mnZTzuir0rfTCkVyiQ==
+vite-svg-loader@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/vite-svg-loader/-/vite-svg-loader-3.5.0.tgz#da03c03096d0ef8e6c7011648b150e04163e0cb5"
+  integrity sha512-lFIA9YBMM24szNn5Gjk3d7f7dsfMcp/1Gmto7MCxdc0oCMJzjQZraDj1l0Ay/SRq2p6N1E069D1imwgXo0Zd3A==
   dependencies:
     "@vue/compiler-sfc" "^3.2.20"
     svgo "^2.7.0"
